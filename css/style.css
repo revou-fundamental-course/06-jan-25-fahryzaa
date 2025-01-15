@@ -6,11 +6,12 @@
 }
 
 
+
 .logo-icon {
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    background-image: url(https://picsum.photos/200);
+    background-image: url(css\p3icon.jpg/1000);
     background-size: cover;
 }
 
@@ -43,6 +44,17 @@ nav>a {
     background-image: url(persona-3wp.jpg);
     background-size: cover;
     background-position: center;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    height: 100%;
+    color: white;
+    font-size: 25px;
 }
 
 .content {
