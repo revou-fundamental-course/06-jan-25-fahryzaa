@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan</title>
+
+    <!-- CSS -->
+     <link rel="stylesheet" href="css\style.css">
+</head>
+<body>
+    <hr />
+    <!-- Logo dan navigation -->
+    <header class="main-header">
+        <!-- Logo -->
+        <div class="logo-icon">
+
+        </div>
+        <!-- Navigation -->
+        <nav>
+                <a href="#home-page" class="left-rounded">Home</a>
+                <a href="#our profile">Our Profile</a>
+                <a href="#portofolio">Portofolio</a>
+                <a href="#message us" class="right-rounded">Message us</a>
+        </nav>
+    </header>
+
+    <hr />
+
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Home Page -->
+        <section>
+            <header id="home-page">
+                <h1 style="font-family: sans-serif;">Hi <span id="user-greeting">User</span>, Welcome to our website</h1>
+                <p>lorem ipsum dolor sit amet adipiscing...</p>
+            </header>
+
+            <div class="banner-image">
+
+            </div>
+
+        </section>
+
+        <!-- Our Profile -->
+         <section>
+            <hr />
+            <!-- title -->
+             <header id="our-profile">
+                <h1>Our Profile</h1>
+             </header>
+        
+             <div class="content"></div>
+        </section>
+
+        <!-- Portofolio -->
+         <section>
+            <!-- title -->
+             <hr />
+            <header id="portofolio">
+                <h1>Portofolio</h1> 
+             </header>
+        
+             <div class="content"></div>
+         </section>
+
+        <!-- Message Us -->
+         <section>
+            <!-- title -->
+             <hr />
+            <header id="message-us">
+                <h1>Message  Us</h1>
+             </header>
+        
+             <div class="content">
+
+            <form action="/submit" method="post"></form>
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+
+                <br>
+
+                <label>Tanggal Lahir:</label>
+                <input type="date" name="tanggal" />
+                
+                <br>
+
+                <label for="jenis kelamin">Jenis Kelamin:</label>
+                <input type="radio" id="laki-laki" name="jenis kelamin" value="laki-laki" >
+                <label for="laki-laki">Laki-laki</label>
+                <input type="radio" id="perempuan" name="jenis kelamin" value="perempuan" >
+                <label for="perempuan">Perempuan</label>
+
+                <br>
+                
+                <label for="pesan">Pesan:</label>
+                <textarea id="pesan" name="pesan" rows="4" cols="50"></textarea>
+
+                <br>
+
+                <button type="submit">Submit</button>
+
+             
+            </div>
+            </form>
+
+         </section>
+
+
+    </main>
+
+    <hr />
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 - All right reserved</p>
+    </footer>
+
+  
+
+</body>
+</html>

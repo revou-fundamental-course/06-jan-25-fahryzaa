@@ -1,0 +1,56 @@
+/* ini file CSS */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo-icon {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-image: url(https://picsum.photos/200);
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+}
+
+.left-rounded {
+    border-radius: 5px 0 0 5px;
+}
+
+.right-rounded {
+    border-radius: 0 5px 5px 0;
+}
+
+nav>a {
+    border: 1px solid black;
+    padding: 8px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: black;
+    text-decoration: none;
+
+}
+
+.banner-image {
+    height: 450px;
+    background-image: url(persona-3wp.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.content {
+    
+    height: 500px;
+
+}
+
+footer {
+    text-align: center;
+}
