@@ -47,7 +47,7 @@ nav>a {
 h1 {
     font-size: 50px;
     text-align: center;
-    
+
 }
 
 .banner-image {
@@ -67,29 +67,78 @@ h1 {
     color: white;
     font-size: 25px;
 
-
 }
+
 
 .circle {
-    border: 1px solid;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
+    border: 1px solid #000;
+
+  }
+
+  .member {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 55px;
-;
+    justify-content: space-around;
+    margin-top: 50px;
+     
+  }
+
+  .char-name {
+    margin-top: 10px;
+  }
+
+.content-member {
+    height: 350 px;
 }
-
-
 
 .content {
     height: 500px;
- 
-
 }
 
+
+form {
+    
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    float: left;
+    margin-left: 30px;
+    justify-content: space-between;
+    
+  }
+
+  label {
+    display: flex;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  input[type="date"],
+  textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+  }
+
+  input[type="radio"] {
+    margin-right: 5px;
+  }
+
+  
+.result {
+    height: 300px;
+    width: 300px;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    float: right;
+    flex-direction: column;
+}
 footer {
     text-align: center;
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Latihan</title>
+    <script src="js\script.js"></script>
 
     <!-- CSS -->
      <link rel="stylesheet" href="css\style.css">
@@ -29,106 +30,104 @@
 
     <!-- Main Content -->
     <main>
-        
         <!-- Home Page -->
-        <section>
-           
+    <section>   
         <header>
             <div class="banner-image">
                 <div class="container">
-                    <div class="centered-greeting">Hi <span id="user-greeting">User,</span> Welcome to our website </div>
-                  </div>
-                   
-        </header>
+                    <div class="user-greeting">Hi User,
+                        <p id="greeting"> Welcome To My Website</p> 
+                    </div>
+               </div>   
             </div>
-
-        </section>
+        </header>         
+    </section>
 
         <!-- Our Profile -->
-         <section>
+    <section>
             <hr />
             <!-- title -->
              <header id="our-profile">
                 <h1>SEES Member</h1>
              </header>
         
-             <div class="content">
-                <div class="circle">
-                    <img src="css\mkotoicon.jpg" alt="Makoto Yuki" class="circle">
-                    <img src="css\aigisicon.jpg" alt="Aigis" class="circle" >
-                    <img src="css\junpeiicon.jpg" alt="Junpei Iori" class="circle">
-                    <img src="css\mitsuruicon.jpg" alt="Mitsuru Kirijo" class="circle">
-                    <img src="css\yukariicon.jpg" alt="Yukari Takeba" class="circle">
+        <div class="content-member">
+                 <div class="member">
+                    <img src="css\mkotoicon.jpg"  class="circle">
+                    <img src="css\aigisicon.jpg"  class="circle" >
+                    <img src="css\junpeiicon.jpg"  class="circle">
+                    <img src="css\mitsuruicon.jpg"  class="circle">
+                    <img src="css\yukariicon.jpg"  class="circle">
                 </div>
-                </div>
-
+        
+            <div class="member">
+                    <div class="char-name">Makoto Yuki</div>
+                    <div class="char-name">Aigis</div>
+                    <div class="char-name">junpei Iori</div>
+                    <div class="char-name">Mitsuru Kirijo</div>
+                    <div class="char-name">Yukari Takeba</div>
              </div>
-        </section>
+        </div>
+    </section>
 
         <!-- Portofolio -->
-         <section>
+        <section>
             <!-- title -->
              <hr />
             <header id="portofolio">
                 <h1>Portofolio</h1> 
              </header>
         
-             <div class="content"></div>
-         </section>
+             
+        </section>
 
         <!-- Message Us -->
-         <section>
+    <section>
             <!-- title -->
              <hr />
+            <div class="content">
             <header id="message-us">
                 <h1>Message  Us</h1>
-             </header>
+            </header>
+
+            <form id="myForm">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" required>
+                
+                <label for="tanggalLahir">Tanggal Lahir:</label>
+                <input type="date" id="tanggalLahir" name="tanggalLahir" required>
+                
+                <label>Jenis Kelamin:</label>
+                <input type="radio" id="pria" name="jenisKelamin" value="Pria" for="Pria">laki-laki
         
-             <div class="content">
-
-            <form action="/submit" method="post"></form>
-                <label for="name">Nama:</label>
-                <input type="text" id="name" name="name" required>
-
-                <br>
-
-                <label>Tanggal Lahir:</label>
-                <input type="date" name="tanggal" />
-                
-                <br>
-
-                <label for="jenis kelamin">Jenis Kelamin:</label>
-                <input type="radio" id="laki-laki" name="jenis kelamin" value="laki-laki" >
-                <label for="laki-laki">Laki-laki</label>
-                <input type="radio" id="perempuan" name="jenis kelamin" value="perempuan" >
-                <label for="perempuan">Perempuan</label>
-
-                <br>
-                
+                <input type="radio" id="wanita" name="jenisKelamin" value="Wanita" form="Wanita">perempuan
+    
+        
                 <label for="pesan">Pesan:</label>
-                <textarea id="pesan" name="pesan" rows="4" cols="50"></textarea>
-
-                <br>
-
-                <button type="submit">Submit</button>
-
-             
-            </div>
+                <textarea id="pesan" name="pesan" rows="4" cols="50" required></textarea>
+        
+                <button type="button" onclick="tampilkanHasil()">Kirim</button>
             </form>
+        
+            <div id="hasil" class="result" style="display: none;">
+                <h3>Hasil Input:</h3>
+                <p id="hasilNama"></p>
+                <p id="hasilTanggalLahir"></p>
+                <p id="hasilJenisKelamin"></p>
+                <p id="hasilPesan"></p>
+            </div>
+        
 
-         </section>
+            </div>
+    </section>
 
 
     </main>
-
     <hr />
-
     <!-- Footer -->
     <footer>
         <p>&copy; 2025 - All right reserved</p>
     </footer>
-
-  
 
 </body>
 </html>
